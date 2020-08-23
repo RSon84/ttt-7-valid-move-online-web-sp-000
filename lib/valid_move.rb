@@ -9,7 +9,7 @@ elsif # true if number is between 1 -9, false if not
   elsif
     board == "X" || "Y"
     return false
-    puts "Position taken"
+    puts "Position already taken"
   elsif
     index < 0 && > 8
     return false

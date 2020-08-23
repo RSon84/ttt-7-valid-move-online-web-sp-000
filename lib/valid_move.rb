@@ -2,16 +2,17 @@
 def valid_move?(board, index)
 if
   position_taken? == "" && " "
-  return false
-elsif # true if number is between 1 -9, false if not
-    position_taken? >= 0 && position_taken? <= 8
+  return true
+end
+if
+  position_taken? != "X" || "Y"
     return true
-  elsif
-  position_taken? == "X" || "Y"
-    return true
-  elsif
-    position_taken? < 0 && position_taken? > 8
+  elsif position_taken? == "X" || "Y"
     return false
+end
+if
+position_taken? < 0 && position_taken? > 8
+return false
   end
 end
 

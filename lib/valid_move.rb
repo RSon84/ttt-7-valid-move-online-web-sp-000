@@ -1,7 +1,7 @@
 # code your #valid_move? method here
-def valid_move
+def valid_move(board, index)
   if # true if number is between 1 -9, false if not
-    position_taken? >= 0 && position_taken? <= 8
+    index >= 0 && index <= 8
     return true
   end
 end

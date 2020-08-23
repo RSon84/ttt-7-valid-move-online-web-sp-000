@@ -1,7 +1,11 @@
 # code your #valid_move? method here
 def valid_move(board, index)
-  if # true if number is between 1 -9, false if not
-    index >= 0 && index <= 8
+if 
+  board == "" && " "
+  return true
+  
+elsif # true if number is between 1 -9, false if not
+    index >= 0 && <= 8
     return true
   end
 end
